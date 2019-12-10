@@ -12,6 +12,15 @@ import android.view.ViewGroup
  */
 class MapFragment : Fragment() {
 
+    fun newInstance(): MapFragment
+    {
+        val args = Bundle()
+
+        val frag = MapFragment()
+        frag.arguments = args
+
+        return frag
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

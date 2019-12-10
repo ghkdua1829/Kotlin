@@ -9,6 +9,16 @@ import android.view.ViewGroup
 
 class MainFragment : Fragment() {
 
+    fun newInstance(): MainFragment
+    {
+        val args = Bundle()
+
+        val frag = MainFragment()
+        frag.arguments = args
+
+        return frag
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
